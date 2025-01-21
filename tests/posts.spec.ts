@@ -135,7 +135,7 @@ describe('e2e posts api testing', () => {
                 const {
                     body: { _id },
                 } = await request(app).post('/api/posts').send(examplePost).expect(200);
-
+                
                 const {
                     body: { data },
                 } = await request(app).put(`/api/posts/${_id}`).send({ data: propertyForUpdate }).expect(200);

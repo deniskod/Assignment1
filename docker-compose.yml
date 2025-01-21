@@ -6,7 +6,7 @@ services:
     ports:
       - 27017:27017
 
-  post:
+  backend:
     build: .
     environment:
       PORT: 8000
