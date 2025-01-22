@@ -8,5 +8,6 @@ export const config = {
     mongo: {
         uri: env.get('MONGO_URI').default('mongodb://localhost').required().asString(),
         postsCollectionName: env.get('POSTS_COLLECTION_NAME').default('posts').required().asString(),
+        commentsCollectionName: env.get('COMMENTS_COLLECTION_NAME').default('comments').required().asString(),
     },
 };
